@@ -1,23 +1,21 @@
 body {
   font-family: Arial;
-  margin: 0;
   background: #f4f4f4;
-}
-
-header {
-  background: #222;
-  color: white;
-  padding: 20px;
   text-align: center;
-}
-
-.posts {
-  padding: 20px;
 }
 
 .post {
   background: white;
-  margin: 15px 0;
   padding: 15px;
+  margin: 20px;
   border-radius: 10px;
+}
+
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark .post {
+  background: #1e1e1e;
 }
