@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2 class="heading">All Blog Posts</h2>
+{% if posts %}
+    {% for post in posts %}
+        <div class="card">
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.content }}</p>
+            <div class="actions">
+                <a class="btn edit" href="{{ url_for('edit', id=post.id) }}">Edit</a>
+                <a class="btn delete"
+                   href="{{ url_for('delete', id=post.id) }}"
+                   onclick="return confirm('Are you sure?')">Delete</a>
+            </div>
+        </div>
+    {% endfor %}
+{% else %}
+    <p class="empty">No posts available 😢</p>
+{% endif %}
+{% endblock %}
