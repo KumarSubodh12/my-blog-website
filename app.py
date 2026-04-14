@@ -1,7 +1,7 @@
 """
 Project: Simple Blog Application
-Name: MONISHKA BAJAJ
-Date: 10-04-2026
+Name: KUMAR SUBODH
+Date: 03-04-2026
 Description: A basic CRUD blog using Flask (no database)
 """
 from flask import Flask, render_template, request, redirect, url_for
